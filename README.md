@@ -4,6 +4,7 @@
 支持接口
 
 //get请求
+
 -(void) httpGet: (NSString *)url
       parameters: (id)parameters
       identifier:(int)identifier
@@ -23,6 +24,7 @@
                block:(void (^)(id responseObject,NSError *error))block;
 
 //post请求
+
 -(void) httpPost: (NSString *)url
        parameters: (id)parameters
        identifier:(int)identifier
