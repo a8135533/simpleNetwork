@@ -1,6 +1,6 @@
 # simpleNetwork
 #简单的网络编程
-#1、AFNetworking
+#1、AFNetworking（http/https）
 支持接口
 
 //get请求
@@ -48,9 +48,24 @@
         }
 }];
 
-#2、AsyncSocket
+#2、AsyncSocket(Socket)
 
-#3、NSURLSession
+使用例子
+
+    //AsyncSocket
+    [TCPUtils sharedInstance].socketHost = @"192.168.1.1";
+    [TCPUtils sharedInstance].socketPort = 808;
+    [TCPUtils sharedInstance].delegate = self;
+    // 在连接前先进行手动断开
+    [TCPUtils sharedInstance].socket.userData = SocketOfflineByUser;
+    [[TCPUtils sharedInstance] cutOffSocket];
+    // 确保断开后再连，如果对一个正处于连接状态的socket进行连接，会出现崩溃
+    [TCPUtils sharedInstance].socket.userData = SocketOfflineByServer;
+    [TCPUtils sharedInstance].data = nil;
+    [TCPUtils sharedInstance].timeout = 120;
+    [[TCPUtils sharedInstance] socketConnectHost];
+    
+#3、NSURLSession（http/https）
 
 支持接口
 
