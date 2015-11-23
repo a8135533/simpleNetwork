@@ -49,4 +49,36 @@
 }];
 
 #2、AsyncSocket
+
 #3、NSURLSession
+
+支持接口
+
+//post请求 请求参数放在NSDictionary中
+
+-(void)httpspost:(NSString *)postUrl dict:(NSDictionary *)dict completionHandler:(void (^)(NSData *data, NSURLResponse *response, NSError *error))handler;
+
+//下载图片
+
+-(void)downLoadImage:(NSString *)downUrl completionHandler:(void (^)(NSString *filePath))handler;
+
+使用例子
+
+   [[SDNetworkManager sharedNetworkManager] getHomeInfoWithBlock:^(id responseObject, NSError *error) {
+        if (error) {
+            //@"服务器连接异常";
+        }
+        else
+        {
+            if([responseObject.code isEqualToString:@"200"])
+            {
+            }
+            else
+            {
+                [self toastInfo:responseObject.msg];
+            }
+        }
+        
+    }];
+
+
