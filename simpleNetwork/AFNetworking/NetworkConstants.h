@@ -12,15 +12,14 @@
 //正式服务器地址
 #define kAppBaseURLString @"http://test.com.cn:8082/mobile/"
 
-#define KP2PRegistrationAgreement @"http://p2pmobile.onewealth.com.cn:8082/themes/p2p_registration_agreement.html"
 
 #define _setObjectToDictionary(dict, key, object) if (object != nil) [dict setObject:object forKey:key]
 
 #define kPayOsp @"ios"   //平台名称
 #define kPayOsv @"1.0.0" //平台版本
 #define kPaySdkv @"1.0"  //SDK 版本号
-#define KGoodsName @"P2P"//商品名称
-#define KOrderInfo @"P2P"
+#define KGoodsName @"123"//商品名称
+#define KOrderInfo @"123"
 #define KBusiType  @"0"
 
 //网络状态：

@@ -35,6 +35,7 @@
 		0306CBDE1C02E86D00E3A4AC /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306CBD41C02E86D00E3A4AC /* UIProgressView+AFNetworking.m */; };
 		0306CBDF1C02E86D00E3A4AC /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306CBD61C02E86D00E3A4AC /* UIRefreshControl+AFNetworking.m */; };
 		0306CBE01C02E86D00E3A4AC /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306CBD81C02E86D00E3A4AC /* UIWebView+AFNetworking.m */; };
+		0306CBE31C02F5ED00E3A4AC /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306CBE21C02F5ED00E3A4AC /* NetworkService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,8 @@
 		0306CBD61C02E86D00E3A4AC /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		0306CBD71C02E86D00E3A4AC /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		0306CBD81C02E86D00E3A4AC /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		0306CBE11C02F5ED00E3A4AC /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		0306CBE21C02F5ED00E3A4AC /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +210,8 @@
 		0306CBA21C02E5E100E3A4AC /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				0306CBE11C02F5ED00E3A4AC /* NetworkService.h */,
+				0306CBE21C02F5ED00E3A4AC /* NetworkService.m */,
 				0306CBC71C02E86D00E3A4AC /* UIKit+AFNetworking */,
 				0306CBA31C02E5E100E3A4AC /* AFNetworking */,
 				0306CBC01C02E61600E3A4AC /* NetworkManager.h */,
@@ -420,6 +425,7 @@
 				0306CBDF1C02E86D00E3A4AC /* UIRefreshControl+AFNetworking.m in Sources */,
 				0306CBBE1C02E5E100E3A4AC /* AFURLResponseSerialization.m in Sources */,
 				0306CBBF1C02E5E100E3A4AC /* AFURLSessionManager.m in Sources */,
+				0306CBE31C02F5ED00E3A4AC /* NetworkService.m in Sources */,
 				0306CB6E1C02E3F100E3A4AC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
