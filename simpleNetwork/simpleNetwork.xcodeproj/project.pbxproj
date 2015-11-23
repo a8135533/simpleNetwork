@@ -36,6 +36,10 @@
 		0306CBDF1C02E86D00E3A4AC /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306CBD61C02E86D00E3A4AC /* UIRefreshControl+AFNetworking.m */; };
 		0306CBE01C02E86D00E3A4AC /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306CBD81C02E86D00E3A4AC /* UIWebView+AFNetworking.m */; };
 		0306CBE31C02F5ED00E3A4AC /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306CBE21C02F5ED00E3A4AC /* NetworkService.m */; };
+		0306CBE91C02FD6B00E3A4AC /* SDNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306CBE61C02FD6B00E3A4AC /* SDNetwork.m */; };
+		0306CBEA1C02FD6B00E3A4AC /* SDNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306CBE81C02FD6B00E3A4AC /* SDNetworkManager.m */; };
+		0306CBF01C0300E300E3A4AC /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306CBED1C0300E300E3A4AC /* AsyncSocket.m */; };
+		0306CBF11C0300E300E3A4AC /* TCPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0306CBEF1C0300E300E3A4AC /* TCPUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +120,14 @@
 		0306CBD81C02E86D00E3A4AC /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		0306CBE11C02F5ED00E3A4AC /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
 		0306CBE21C02F5ED00E3A4AC /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		0306CBE51C02FD6B00E3A4AC /* SDNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDNetwork.h; sourceTree = "<group>"; };
+		0306CBE61C02FD6B00E3A4AC /* SDNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDNetwork.m; sourceTree = "<group>"; };
+		0306CBE71C02FD6B00E3A4AC /* SDNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDNetworkManager.h; sourceTree = "<group>"; };
+		0306CBE81C02FD6B00E3A4AC /* SDNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDNetworkManager.m; sourceTree = "<group>"; };
+		0306CBEC1C0300E300E3A4AC /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		0306CBED1C0300E300E3A4AC /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		0306CBEE1C0300E300E3A4AC /* TCPUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCPUtils.h; sourceTree = "<group>"; };
+		0306CBEF1C0300E300E3A4AC /* TCPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCPUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +158,8 @@
 		0306CB601C02E3F100E3A4AC = {
 			isa = PBXGroup;
 			children = (
+				0306CBEB1C0300E300E3A4AC /* AsyncSocket */,
+				0306CBE41C02FD6B00E3A4AC /* NSURLSession */,
 				0306CBA21C02E5E100E3A4AC /* AFNetworking */,
 				0306CB6B1C02E3F100E3A4AC /* simpleNetwork */,
 				0306CB881C02E3F100E3A4AC /* simpleNetworkTests */,
@@ -271,6 +285,28 @@
 				0306CBD81C02E86D00E3A4AC /* UIWebView+AFNetworking.m */,
 			);
 			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		0306CBE41C02FD6B00E3A4AC /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				0306CBE51C02FD6B00E3A4AC /* SDNetwork.h */,
+				0306CBE61C02FD6B00E3A4AC /* SDNetwork.m */,
+				0306CBE71C02FD6B00E3A4AC /* SDNetworkManager.h */,
+				0306CBE81C02FD6B00E3A4AC /* SDNetworkManager.m */,
+			);
+			path = NSURLSession;
+			sourceTree = "<group>";
+		};
+		0306CBEB1C0300E300E3A4AC /* AsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				0306CBEC1C0300E300E3A4AC /* AsyncSocket.h */,
+				0306CBED1C0300E300E3A4AC /* AsyncSocket.m */,
+				0306CBEE1C0300E300E3A4AC /* TCPUtils.h */,
+				0306CBEF1C0300E300E3A4AC /* TCPUtils.m */,
+			);
+			path = AsyncSocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,6 +444,7 @@
 				0306CB711C02E3F100E3A4AC /* AppDelegate.m in Sources */,
 				0306CBB81C02E5E100E3A4AC /* AFHTTPRequestOperationManager.m in Sources */,
 				0306CBD91C02E86D00E3A4AC /* AFNetworkActivityIndicatorManager.m in Sources */,
+				0306CBF11C0300E300E3A4AC /* TCPUtils.m in Sources */,
 				0306CBC61C02E68A00E3A4AC /* ParseCenter.m in Sources */,
 				0306CBBC1C02E5E100E3A4AC /* AFURLConnectionOperation.m in Sources */,
 				0306CBDE1C02E86D00E3A4AC /* UIProgressView+AFNetworking.m in Sources */,
@@ -415,14 +452,17 @@
 				0306CB7A1C02E3F100E3A4AC /* simpleNetwork.xcdatamodeld in Sources */,
 				0306CBBD1C02E5E100E3A4AC /* AFURLRequestSerialization.m in Sources */,
 				0306CBDC1C02E86D00E3A4AC /* UIButton+AFNetworking.m in Sources */,
+				0306CBF01C0300E300E3A4AC /* AsyncSocket.m in Sources */,
 				0306CBDD1C02E86D00E3A4AC /* UIImageView+AFNetworking.m in Sources */,
 				0306CBC21C02E61600E3A4AC /* NetworkManager.m in Sources */,
 				0306CBB91C02E5E100E3A4AC /* AFHTTPSessionManager.m in Sources */,
 				0306CBDB1C02E86D00E3A4AC /* UIAlertView+AFNetworking.m in Sources */,
 				0306CBE01C02E86D00E3A4AC /* UIWebView+AFNetworking.m in Sources */,
 				0306CBDA1C02E86D00E3A4AC /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				0306CBE91C02FD6B00E3A4AC /* SDNetwork.m in Sources */,
 				0306CBBA1C02E5E100E3A4AC /* AFNetworkReachabilityManager.m in Sources */,
 				0306CBDF1C02E86D00E3A4AC /* UIRefreshControl+AFNetworking.m in Sources */,
+				0306CBEA1C02FD6B00E3A4AC /* SDNetworkManager.m in Sources */,
 				0306CBBE1C02E5E100E3A4AC /* AFURLResponseSerialization.m in Sources */,
 				0306CBBF1C02E5E100E3A4AC /* AFURLSessionManager.m in Sources */,
 				0306CBE31C02F5ED00E3A4AC /* NetworkService.m in Sources */,
