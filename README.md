@@ -12,13 +12,13 @@
 
 //下载图片
 
--(void) httpGetImage: (NSString *)url
+- (void) httpGetImage: (NSString *)url
           identifier:(int)identifier
                block:(void (^)(id responseObject,NSError *error))block;
 
 //通过参数获得图片
 
--(void) httpGetImage:(NSString *)url
+- (void) httpGetImage:(NSString *)url
           parameters:(id)parameters
           identifier:(int)identifier
                block:(void (^)(id responseObject,NSError *error))block;
@@ -39,12 +39,13 @@
 
 使用例子
 
-[[NetworkService sharedNetworkService] getIndexDataWithBlock:^(id responseObject, NSError *error) {
+[[NetworkService sharedNetworkService] getIndexDataWithBlock:^(id responseObject, NSError *error) 
+{
         if (responseObject)
         {
             
         }
-    }];
+}];
 
 #2、AsyncSocket
 #3、NSURLSession
