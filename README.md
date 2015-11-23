@@ -1,8 +1,8 @@
 # simpleNetwork
 #简单的网络编程
 #1、AFNetworking
-#支持接口
-#//get请求
+支持接口
+//get请求
 - (void) httpGet: (NSString *)url
       parameters: (id)parameters
       identifier:(int)identifier
@@ -32,8 +32,8 @@
        identifier:(int)identifier
             block:(void (^)(id responseObject,NSError *error))block;
 
-#使用例子
-# [[NetworkService sharedNetworkService] getIndexDataWithBlock:^(id responseObject, NSError *error) {
+使用例子
+[[NetworkService sharedNetworkService] getIndexDataWithBlock:^(id responseObject, NSError *error) {
         if (responseObject)
         {
             
